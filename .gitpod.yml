@@ -1,0 +1,12 @@
+# Gitpod configuration for Playwright
+tasks:
+  - name: Setup Playwright
+    init: |
+      npm install
+      npx playwright install --with-deps
+    command: echo "✅ Environment ready. Run 'npx playwright test' manually when you want."
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
+    - dbaeumer.vscode-eslint
